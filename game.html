@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="http://localhost:8080/gruppe18/ue6/styles.css">
+	<script src="scripts.js"></script>
+	<title>Game page</title>
+
+</head>
+<body class="game">
+	<div>
+		<div class="information" id="information">Select a door and click Play</div>
+		<div >
+			Wins with change of choice: <div class="info_table" id="win_with_change"></div>
+		</div>
+		<div>
+			Wins without changing choice: <div class="info_table" id="win_with_stick"></div>
+		</div>
+		<div>
+			Number of games: <div class="info_table" id="number_of_games">0</div>
+		</div>
+	</div>
+	<div id="game_page">
+		<div class="responsive">
+			<div class="gallery">
+				<img id="door1" src="http://localhost:8080/gruppe18/ue6/pics/closed_door.png" alt="closed_door" onclick="selectDoor(1)">
+			</div>
+		</div>
+		<div class="responsive">
+			<div class="gallery">
+				<img id="door2" src="http://localhost:8080/gruppe18/ue6/pics/closed_door.png" alt="closed_door" onclick="selectDoor(2)">
+			</div>
+		</div>
+		<div class="responsive">
+			<div class="gallery">
+				<img id="door3" src="http://localhost:8080/gruppe18/ue6/pics/closed_door.png" alt="closed_door" onclick="selectDoor(3)">
+			</div>
+		</div>
+	</div>
+	<input name="play_button" type="button" value="Play" onclick="show()">
+	<input name="reset_button" type="button" value="Reset" onclick="initialise()">
+</body>
+</html>
+
